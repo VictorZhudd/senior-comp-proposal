@@ -1,0 +1,112 @@
+\documentclass[10pt,twocolumn]{article} 
+
+% use the oxycomps style file
+\usepackage{oxycomps}
+
+% read references.bib for the bibtex data
+\bibliography{references}
+
+% include metadata in the generated pdf file
+\pdfinfo{
+    /Title (Literary Review for Nirvana Machinas)
+    /Author (Victor Zhu)
+}
+
+% set the title and author information
+\title{Senior Comp Proposal}
+\author{Victor Zhu}
+\affiliation{Occidental College}
+\email{hzhu@oxy.edu}
+
+\begin{document}
+
+\maketitle
+
+
+\section{Introduction and problem context}
+
+Nirvana Machinas is a game that consist of elements of Rouglite, card deck collection, and bullet hell. The in-game goal is to travel across the post-apocalyptic wasteland to upload the player’s consciousness to an extraterrestrial server in order to achieve "Nirvana into the machines"(Nirvana Machinas). In the game, the players are on their journey of pilgrimage, it mirrors the pilgrimage we called life. The player is given a set of cards at the beginning and gain more from combat or special events in game. The player will be using these cards to fight most of his obstacles such as bandits, heretics and/or monsters of radiation, etc. The player is a monk, pilgrim, zealot, ascetic who seeks peace and ascension in the post-apocalyptic wasteland. The monk must travel through three different areas, the Wastes, full of bandits and feral animals, the Nuclear Hell, where consist of heretics and mosters mutated past recognition. The final level is the Sea of Misery. the bomb crater that carries radiatioactive water ,ill-wired robots and more heretics. After the three levels, the player will reach the data center and upload his consinouss.
+
+Nirvana Machinas is consist of complex arrays of video game mechniacs. Niravana Machinas is first a rogue-lite game. Rogue-lite is a subgenre of Roguelike game. Roguelike is a subgenre of role-playing video games characterized by permanent death of the player character.(1) The name ""Rogue-like" comes from the game Rogue(1980) which features dungeon crawl through procedurally generated levels, turn-based gameplay, grid-based movement and permant death. Other famous one of the Rogue-like genre includes Nethacks, Mystery Dungeon etc. Rogue-lite is a subgenre of Roguelike which signature is player is able to acess the progession elements after the player's death. After each playthrough in Nirvana Machinas, player will be rewarded with points that can unlock more artifacts and cards. The main mechniacs of Nirvana Machinas is card deck collection. The card-deck collection genre has a long history. In a way, poker is also card-deck collection game. This genre is define card-based game play and collection of cards as the player progess. In Nirvana Machinas, the player has to use card to combat their enenmy and get new cards after wining or special event. Nirvana Machinas also consists of bullethell elements. Bullet Hell refers to a sub-genre of shooters whose main gameplay focus is dodging seemingly endless waves of bullets.(2) One of example game of this genre is Touhou Project. In the game, the player has to go through special bullethell levels in order to get new sets of cards.
+
+
+
+
+
+\section{Techolocial background}
+
+This game will be using Unity as the engine for its adaptability and availability. I will use C+ scripts to code movement for characters. The character art is drawn by my partner Mattew Perez. The monk and first encounter enemies are drawn in sprite render in unity hub. All their movement is done in c+ scripts as the character’s movement is rather minimal. The card and its logic are also done in the C+ scripts.
+
+
+\section{Prior Work  }
+*Slay the Spire*
+Slay the Spire creates new genre by combine roguelite and card-deck collection game. Its undoubtly success inspires many slimaliar games like: Griftland ,the Night of Fullmoon , Blackbook etc. The game consists 4 characters: Ironclad,Silent,Defect, Watcher. Each of them has its unqiue mechanic, cards and artifacts. This game creates a new combats system that are much fited for single player. The enemy instead of using another set of playing card, they have predetemined actions. Their predetemed action can be serpated in 3 category: attack, defence and special effect. The enemies will also display their intension on the top of their head. With this inovative gameplay, the developer will spend less time designing enemie 's combat tatic and therefore easily regulate the balance of cards.
+*The binding of Issac*
+	The binding of Isaac is also one of the most influential independent games of the current generation. The game is a combination of rogue-like and bullet hell with religouious element. The story is about a child escaping from being sacrifice by his parent, parallel to the legend of issac in the bible. In the game the child has to fight through the “basement”  The basement is divided into a series of single chambers, with a world design that is reminiscent to the Legend of Zelda's dungeons. In actuality, the game is divided into several levels, each with an end boss to defeat before continuing. Long-time gamers will feel right at home with Isaac's traditions, which include bombs, treasure boxes, and even keys.
+*The black book*
+The black is another great exmaple of indie card collection game. It feature a witch who lives in fedual era Russia who is task to help the villager. The plot is really import in this game.Vasilisa, the koldun (Russian name for witch) who comes from a koldun family. She was first against her heritage but Her husband's death pushes her over the brink. Her husband killed himself therefore he is  bound for Hell. So in order to save her husband, Vasilisa accepts her inheritance and takes up the black book of spells, as well as the terrible power that comes with it.  Instead having a rouge-like vague plot, this game has a very linear plot. The cards are design after spells that actually exist in history. The game also consist of level system where the player would spend points to increase the witch ‘s power. There are also other feature that is similar to pokemon: Every Koldun owns little devils who do works for them. In the game, Vasliisa constantly has to send those devil out to doing for her or she will be punished by those devils. This is a unique feature that other similar does not have.
+
+ 
+\section{Method and Evaluation Metrics}
+The project aims to create a playable 2d card game by unity. The first task is to create a single level that works. The first level has to have the main character and an enemy and a set of cards to be played. There are assets on the Unity store that can be used as the main character model and enemy model. There are also some preset card materials  I can find in the unity store. The animation of the characters and cards effect will stay minium for this is a card game. There is no need for more flowering special effects. Then I will create a valid card and card deck logic. This part is hard to do on my own, for the cards effects need balance. However, there are many example to follow, such as Slay the spire, hearthstone. These game already have a valid system I could learn from. That being said, Nirvana Machinas is a single player game, card balance is not the main focus of the game. It is my goal to let the player enjoy the playing the cards as a character development process instead of a competitive process. Then I have to implement the enemy logic which fell into four categories: attack, defence, debuff, buff. All of these effect can be coded with C script. These effect can also be coded to reponond to the player’s move. After I have finished the basic implementation, I could build more level onto the current build. The second level will be the same background with different enemies. After configure the second level, I will create more enemies and more encounters that further enrich the game play. After there is sufficient materials, I will create a randomizer that will randomly assign these enemies to the player ‘s path. This randomizer will enhance the rougelike aspect of the game. After I have finished the game, I will put it on steam allow other people in the world to play the early access of my game for free. The evaluation result of my game will be depends on the steam mearsureing metric.  There will be feedback from those people and I will better my game accordly. I will be happy with the score “ mostly positive review”.
+
+
+\section{Ethical consideration}
+Moral in video games
+ As video games evolve, The background of video games gets more diverse. The morals we value in reality might not apply to the world in certain video games built. In Spores, the player plays as aspiring species that are evolving in an unforgiving world. Should the new creature the player creates adhere to human morals? The answer from the Spores’ developer is no. Even though this game is rated E, there are countless “murders” that happen in the game. Players will starts as micro-organisms and then through devouring other organisms around them, they evolve. This kind of behavior is fawned upon in the human world. A person who kills other people for his or her personal benefit would be prosecuted and incarnated immediately. However, this is not the case in the animal kingdom. The animal in the wild adheres to the law of nature, where the strong eats the weak. Aristotle, the great greek philosopher was one of the earliest and most articulate proponents of this viewpoint. He claimed that all living things had a natural hierarchy. Plants, animals, and humans are all capable of consuming nutrients and growing, but only animals and humans have conscious experiences. This suggests that, despite their inferiority to animals and humans, plants serve the requirements of both animals and humans. Likewise, there are hierarchies within the animal kingdom: The superior animals eat the animal of the lower hierarchy. (Regan and Singer, 1989). This kind of idea justifies the murder of the other organism in Spore. However, the organism that the player plays did not make the choice of killing other organisms for its benefit, the player did.
+The player, as a conscious human being, made the choice through their character in the game and therefore ultimately responsible for the actions of their in-game characters.  In Kantian philosophy, a moral agent, such as the player, has free will and is ultimately responsible for their actions. If the player controls their avatar in the game to commit murder then the responsibility for the murder lay with the player. Since eating other organisms in Spore only satisfy the player’s character‘s instinct desires but not the moral law of human being, the player’s action, according to Kant, is essentially unjust.
+Ethics on video is a complicated matter, the two greatest philosophers of our history have different answers for one simple educational game that was rated E for everyone. 
+
+
+
+The ethic of my game is also ambiguous. My game is called Nirvana Machinas and it is a combination of Rouglite, card deck collection, and bullet hell. The goal of the game is to travel across the post-apocalyptic wasteland to upload the player’s consciousness to an extraterrestrial server in order to achieve Nirvana.  The player is a cyborg monk, pilgrim, zealot, and ascetic who seeks peace and ascension in the post-apocalyptic wasteland.  In the game, the players are on their journey of pilgrimage, which mirrors the Buddhist ascension process.  The player will go through the wasteland, the nuclear hell, the sea of misery, and finally to the data center where the monk will upload his consciousness to the extraterrestrial server. During his journey 
+The monk has to fight enemies such as bandits, heretics, and/or monsters of radiation, etc. 
+There are two main ethical concerns about my games. First, the monk will go through combats that will result in the death of the enemies. Second, since I am Appropriating Buddhist culture to my game, it might create a cultural bias among my players. 
+Since the game is a rogue-lite game that features combat, the monk will constantly engage in battles that would result in the death of the enemy or the monk. One has to ask, is monk action just? 
+The game is set in the post-apocalyptic world, where resources such as food, clean water, etc are scarce. Most of the people roaming the wasteland are either scavengers or bandits and in most situations, they are both. Not only the human held hostility against the monk but also the animals, robots, and even the terrain. They attack the monk purely out of greed and desire to survive. The monk fights back only in self-defense. In philosophy, there is something called casus belli. Casus belli is an act or an event that either provokes or is used to justify a war. One of the most fundamental casus belli is the right to defend oneself against the crime of foreign aggression. The “crime” can take many forms, and in the case of game, it is the constant threat of the outside world. However, in any case, a crime of aggression is committed when the peace of the victim is disrupted. “We know the crime because of our knowledge of the peace it interrupts - not the mere absence of fighting, but peace with rights, a condition of liberty and security that can exist only in the absence of aggression itself. The wrong the aggressor commits is to force men and women to risk their lives for the sake of their rights. It is to confront them with the choice: your rights or (some of) your lives!" (Walzer, 51). As Walzer had said in his essay, the crime initiated when the aggressor strips away the right to live one's life, infringes upon the liberty of victims, and Peace is no longer an option, the only just response is war. As Clausewitz said, “A conqueror is always a lover of peace, (such as Napoleon Bonaparte) he would like to make his entry into our state unopposed, in order to prevent this, we must choose war…” (Walzer, 53). As Clausewitz has asserted, the aggressor will always act as if it were a proponent of peace. A robber would say to his or her victim: if you don't fight back, I will let you live. The robber, the bandits in my game, or a foreign invader all wants their victim to be peaceful, so they could commit their crime easier. Thus, not fighting, a pacifist response, grants the invader precisely what they wished for. Therefore it is evident that it is morally right for the monk in my video game to defend himself against anything in the game that infringes upon his right to freely live and continue his journey.
+
+Violence in video game 
+In the genre of violent video games, there is abundant scientific evidence which prove direct link between violent video game and aggressive thought, aggressive behaviors. 
+In a recent meta-analytic review made by psychologists,  Craig Anderson and Brad Bushman completed a of the psychological literature on video game violence. In their study, which pooled the data of 35 separate studies, they observed a statistically significant positive association between playing violent video games and aggressive behavior, hostile thoughts, and aggressive attitudes. They also had found correlations between violent video game and “prosocial” behaviors in their research.   
+
+
+
+ 
+Culture bias
+In my game, there are many elements of Buddhism involved. However, it is hard to represent an oriental idea without creating cultural bias. Many western video games are adapting "eastern mysticism," the idea that being from an Asian country connects a person to a spiritual and/or magical force that conveniently moves a plot along. Such as games like Shadow Warriors, and Far Cry 4.  However, despite the massive representation of Asian people in video games, the genuine depiction of Asian cultures in games made in the west or adapted for a western audience has been quite limited. 
+According to a Nielsen survey of Caucasians, Hispanics, African-Americans, and Asian-Americans on representation in the video game. Asian-Americans are the most dissatisfied with racial representation in video game characters, In fact, 49 percent of Asian-American respondents are unhappy with racial representation in games. Take one of the earliest video games, Shadow Warrior, for example. 
+One early western-developed game featuring an Asian protagonist is the 1997 first-person shooter Shadow Warrior. It has revived recently and becomes a franchise. In this game, The player takes on the role of protagonist Lo Wang who must fight through the demon horde to get what he wants. 
+A number of problematic matters existed in the game. First, The protagonist’s name is a dick joke with a slight racial implication. Second One of the selling points of the game was  ‘Lo Wang Speak’. It refers to the broken and heavily accented English spoken by the protagonist Lo Wang.  However, the developer chose to combine elements of Japanese and Chinese culture without any taste or real understanding of either culture. When I play the game, it feels like it mocking the culture I inherited. When the game starts, the player will be greeted by the growling voice of Lo Wang, staring at John William Galt. Any person with a brain would know this is clearly the performance of a white man playing an Asian man. It starts with a stereotypical accent with references to “ancient Chinese secret” and using the “L” instead of “R” Shadow Warrior is a fun game but it also creates and contributes to the Asian stereotype. 
+In my game, I have used many Buddhist elements to reference some of the journeys of the monk. The three-level of the games: wasteland, nuclear hell, and the sea of misery are all 
+ references to what Buddhists think of life and ascension. In Lotus Sutra, the world we live in is described as hell or a sea of misery. The Buddhists think as long as we live, we will live in the sea of misery. . It is suggested in the Sutra, that being ascended is to pass through the sea of misery. The only way out is to abandon all earthly existence and become budda. At end of my game, the monk will abandon everything he has on the earth and upload his consciousness into an extraterrestrial server. This mirrors the ascension in Buddhism.
+ I  also used the extraterrestrial server as the reference to the “pure land” of the Buddhist School of Pure land. In their belief, there exist a pure land that is outside our material world, whoever achieves Nirvana will live there and happily forever after. All my elements of Buddhism are derived from the original text of the Buddhist classic, although it has been translated into a post-apocalyptic sci-fi setting.
+
+Accessibility 
+Gaming is just as vital to disabled individuals as it is to able-bodied persons, if not more so because disabled people are more likely to be socially isolated. 
+Although some might think accessibility options are difficult, expensive, and requires diluting your vision, causing harm to the majority of the player base to meet the demands of a small portion of the population who usually don't play games. There is some truth to this statement, however, the accessibility option does not only affect people with disabilities. According to the Washington Post: “The “one-handed control option in Uncharted 4 was used by 1/3 (i.e. millions) of their players,” Hamilton said. “Subtitles were turned off by default in Assassins Creed: Origins [and] just over 60 percent of players turned them on. So Ubisoft had them on by default in Assassins Creed: Odyssey and 95 percent of players left them on. [When] they did the same in Far Cry New Dawn, 97 percent of players left them on.”  The accessibility option is not only for people with disabilities but also provides assistance to people without disabilities. 
+
+My game is not going to have accessibility options, since I don't have the time or the resources to do so. However, it has shut off the disability population to access my game. In America, one in four people suffers from a disability.  They are human and valuable customers too. Without Accessibity option, I will be losing part of my revenue and also disappoint people who want to play my game and are physically incapable of it.    
+
+
+
+\section{Timeline}
+I have taken the game design course this spring, so I already have a framework that I can build on. The framework is relatively crude but has most of thing ready. The current build of project has the model for the main character Monk and simple enemy like the bandit. The first level has already been build. However, there are only 10 cards in the player’s game deck. The gameplay of the current build of the video game is still crude and needs to upgrade. The animation of cards and the enemy can be improved.I also want implement more diaglue into game. During the summer, first, I would try to replace the artwork and model with a better quantity ones, then I will design a better card system. For now, we only have 10 basic cards, I want to expend it to a least 30 cards. During the next semester, I will be implementing more levels into game. I want to finished the second level before October. Before the next semester ends, I will implement a randomanizer that creates a level on its own. During the winter break, I will try to put the game on steam early access. 
+
+
+\begin{itemize}
+\item 5/2022 Start to find art and models that works on my game
+\item 6/2022 start to debugg the current build of project
+\item 7/2022 add more enemy into the game
+\item 8/2022 works on better animation for cards and character
+\item 9/2022 begin to implement more cards into the system
+\item 10/2022 finish the secod level
+\item 11/2022 create a randomizer ai to create a level on its own.
+\item 12/2022 play test my game
+\item 1/2023 put the game on steam on early acess
+\item 2/2023 wait for reviews
+\item 3/2023- 5/2023 change the game base on review
+
+\end {itemize}
+\printbibliography
+
+\end{document}

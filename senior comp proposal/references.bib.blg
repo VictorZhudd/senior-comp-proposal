@@ -1,0 +1,5 @@
+[1] Config.pm:311> INFO - This is Biber 2.16
+[1] Config.pm:314> INFO - Logfile is 'references.bib.blg'
+[235] biber-MSWIN64:340> INFO - === 
+[983] Utils.pm:411> ERROR - Cannot find 'references.bib.bcf'!
+[984] Biber.pm:132> INFO - ERRORS: 1
